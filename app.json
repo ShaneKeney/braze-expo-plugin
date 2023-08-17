@@ -25,6 +25,34 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "plugins": [
+      [
+        "expo-build-properties",
+      {
+        "ios": {
+          "useFrameworks": "static"
+        }
+      }
+    ],
+    [
+      "@braze/expo-plugin",
+      {
+        "iosApiKey": ENV.BRAZE_IOS_API_KEY,
+        "baseUrl": ENV.BRAZE_BASE_URL,
+        "sessionTimeout": 60,
+        "enableGeofence": true,
+        "enableBrazeIosPush": true,
+        "enableFirebaseCloudMessaging": true,
+        "firebaseCloudMessagingSenderId": ENV.BRAZE_FCM_SENDER_ID,
+        "enableSdkAuthentication": false,
+        "logLevel": 0,
+        "minimumTriggerIntervalInSeconds": 0,
+        "enableAutomaticLocationCollection": true,
+        "enableAutomaticGeofenceRequests": true,
+        "dismissModalOnOutsideTap": true
+      }
+    ]
+    ]
   }
 }
