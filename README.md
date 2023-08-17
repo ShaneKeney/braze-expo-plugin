@@ -4,4 +4,10 @@ The goal of this repo is to create a barebones Expo Managed Workflow project tha
 
 ## TODO:
 
-TODO: Need Braze Sandbox Key information to be added to the app.config.ts file.
+- [ ] Need Braze Sandbox Key information to be added to the app.config.ts file.
+- [ ] Create a basic React Navigator using React Navigation.
+  - [ ] Set up basic linking configuration for testing
+- [ ] Install necessary braze dependencies
+  - [ ] Braze Expo Plugin
+  - [ ] Braze SDK (i.e. appboy etc.)
+- [ ] Set up basic Auth gate (doesn't need to actually hit an API) but should simulate protected screens in an app.
